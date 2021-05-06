@@ -15,7 +15,7 @@
     </section>
     <div class="banner">
         <div class="navbar">
-            <h1 class="logo">BLOG</h1>
+            <h1 class="logoAbout" index="about">BLOG</h1>
             <ul>
                 <li><a href="index.html">Home </a></li>
                 <li><a href="about.html">About </a></li>
@@ -24,7 +24,24 @@
         </div>
     </div>
 
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <hr class="thinAbout">       
+    </div>
 
+    <div class="contact-form">
+        <form id = "contact-form" method = "post" type = "text" action="contact-form-handler.php">
+        <input class = "form-control" name = "name" type="text" placeholder="Name" required>
+        <br>
+        <br>
+        <input class = "form-control" name = "email" type="text" placeholder="Email" required>
+        <br>
+        <br>
+            <textarea class = "form-control" name = "message" type="text" row = "4" placeholder="Message" required></textarea><br>
+            <input type="submit" class="form-control submit" value = "Send Message">
+        </form>
+    </div>
+   
     </div>
 </body>
 
