@@ -186,11 +186,15 @@ form .submit {
   border-color: transparent;
   margin-top: 20px;
   box-shadow: inset 0 0 0 #fff;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.3s;
 }
 
 form .submit:hover {
   box-shadow: inset 600px 0 0 0 rgb(255, 102, 0);
   cursor: pointer;
-  color: black;
+  color: #fff;
+}
+
+#messagebox {
+  height: 300px;
 }
