@@ -198,3 +198,31 @@ form .submit:hover {
 #messagebox {
   height: 300px;
 }
+
+
+.about-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(aboutBackground.jpg);
+  background-size: cover;
+}
+
+.about-banner .headers {
+  margin-top: -20%;
+  position: absolute;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-banner .about-content {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
