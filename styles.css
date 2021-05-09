@@ -200,29 +200,45 @@ form .submit:hover {
 }
 
 
-.about-banner {
+.bBox{
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  width: 140px;
+  margin: 50px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(aboutBackground.jpg);
-  background-size: cover;
-}
-
-.about-banner .headers {
-  margin-top: -20%;
-  position: absolute;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-banner .about-content {
-  margin-top: 15%;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
   flex-wrap: wrap;
-  flex-direction: row;
+}
+
+.bBox .textBox h3{
+  text-align: center;
+  font-size: large;
+  margin-top: 10px;
+  color: rgb(255, 102, 0);
+}
+
+.bBox .textBox p{
+  text-align: left;
+  font-weight: 100;
+  margin: 10px 0px 20px 0px;
+  font-style: italic;
+}
+
+.bBox .textBox a{
+  text-decoration: none;
+  background: rgb(255, 102, 0);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.bBox .textBox a:hover{
+  letter-spacing: 5px;
 }
