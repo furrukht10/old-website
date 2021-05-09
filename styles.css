@@ -195,12 +195,11 @@ form .submit:hover {
   color: #fff;
 }
 
-#messagebox {
+/* #messagebox {
   height: 300px;
-}
+} */
 
-
-.bBox{
+.bBox {
   position: relative;
   width: 140px;
   margin: 50px;
@@ -215,21 +214,21 @@ form .submit:hover {
   flex-wrap: wrap;
 }
 
-.bBox .textBox h3{
+.bBox .textBox h3 {
   text-align: center;
   font-size: large;
   margin-top: 10px;
   color: rgb(255, 102, 0);
 }
 
-.bBox .textBox p{
+.bBox .textBox p {
   text-align: left;
   font-weight: 100;
   margin: 10px 0px 20px 0px;
   font-style: italic;
 }
 
-.bBox .textBox a{
+.bBox .textBox a {
   text-decoration: none;
   background: rgb(255, 102, 0);
   padding: 10px 20px;
@@ -239,6 +238,6 @@ form .submit:hover {
   transition: 0.5s;
 }
 
-.bBox .textBox a:hover{
+.bBox .textBox a:hover {
   letter-spacing: 5px;
 }
