@@ -195,6 +195,22 @@ form .submit:hover {
   color: #fff;
 }
 
+.contactSubmit {
+  margin-top: 20px;
+  padding: 10px;
+  width: 500px;
+  background: rgb(255, 102, 0);
+  border-color: transparent;
+  box-shadow: inset 0 0 0 #fff;
+  transition: ease-out 0.3s;
+}
+
+.contactSubmit:hover {
+  box-shadow: inset 600px 0 0 0 rgb(255, 102, 0);
+  cursor: pointer;
+  color: #fff;
+}
+
 /* #messagebox {
   height: 300px;
 } */
