@@ -78,12 +78,38 @@ iframe {
     margin-bottom: 5%;
     font-size: 2.5em;
   }
-  .subhead span {
+  .subhead .nameIntro {
     color: var(--secondary-color);
     font-weight: 700;
   }
-  .subhead .hi {
-    color: black;
+  .subhead .hi:before {
+    content: "Hi.";
+    animation: animate infinite 10s;
+    animation-delay: 3s;
+  }
+
+  @keyframes animate {
+    0% {
+      content: "Hi.";
+    } 
+    10% {
+      content: "Hi.";
+    } 
+    20% {
+      content: "Bonjour.";
+    }
+    40% {
+      content: "Hola.";
+    }
+    60% {
+      content: "Nǐn hǎo.";
+    }
+    80% {
+      content: "Guten Tag.";
+    }
+    100% {
+      content: "As-Salamu-Alaykum";
+    }
   }
 
   .learnButton {
@@ -244,6 +270,7 @@ nav.menuButton {
 
 nav {
   background: var(--secondary-color);
+  opacity: 0.7;
 
   z-index: 1000;
   width: 66%;
