@@ -280,13 +280,17 @@ iframe {
     color: var(--secondary-color);
   }
   a {
-    background: white;
+    background: var(--white);
     display: inline-block;
     margin-top: 50px;
     padding: 5px 15px 5px 15px;
     border-radius: 15px;
     font-weight: 700;
     color: var(--secondary-color);
+  }
+  a:hover {
+    background: #002bff;
+    color: var(--white);
   }
 }
 
