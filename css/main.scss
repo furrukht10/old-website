@@ -135,6 +135,8 @@ iframe {
 
   .learnButton:hover {
     letter-spacing: 6px;
+    background: var(--white);
+    color: var(--secondary-color);
   }
 
   svg {
@@ -171,13 +173,19 @@ iframe {
 
   .aboutButton:hover {
     letter-spacing: 3px;
+    background: var(--white);
+    color: var(--secondary-color);
   }
 }
 
 // Portfolio Section
 
 .portfolio-section {
-  background: var(--third-color);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 
   h2 {
     text-align: center;
@@ -201,6 +209,7 @@ iframe {
     margin: 0 auto 5em auto;
     width: 80%;
     border-radius: 20px;
+    border: 10px solid #002bff;
     img {
       width: 5em;
       height: 3em;
