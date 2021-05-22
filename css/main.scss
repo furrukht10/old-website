@@ -70,9 +70,11 @@ iframe {
 // Hero Section
 .hero {
   text-align: center;
-  background:  linear-gradient(45deg,rgba(255, 255, 255, 1) 0%, rgba(0, 43, 255, 0.8104283949908089))
-  
-
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 43, 255, 0.8104283949908089)
+  );
 }
 
 .left-side {
@@ -92,6 +94,10 @@ iframe {
     content: "Hi.";
     animation: animate infinite 15s;
     animation-delay: 3s;
+    text-shadow: 0 0 7px #fff, 0 0 10px rgb(141, 137, 137), 0 0 21px #fff,
+      0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 255, 255),
+      0 0 92px rgb(255, 255, 255), 0 0 102px rgb(198, 204, 202),
+      0 0 151px rgb(32, 34, 33);
   }
 
   @keyframes animate {
@@ -114,7 +120,7 @@ iframe {
       content: "Guten Tag.";
     }
     100% {
-      content: "As-Salamu-Alaykum";
+      content: "Salam";
     }
   }
 
