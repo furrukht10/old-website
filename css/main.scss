@@ -42,7 +42,7 @@ iframe {
 
 .navbar {
   background: var(--white);
-  padding: 1em;
+  padding: 1em 0.5em 3px;
 
   .logo {
     text-decoration: none;
@@ -93,8 +93,8 @@ iframe {
   .subhead .hi:before {
     content: "Hi.";
     animation: animate infinite 15s;
-    animation-delay: 3s;
-    text-shadow: 0 0 7px #fff, 0 0 10px rgb(141, 137, 137), 0 0 21px #fff,
+    animation-delay: 1s;
+    text-shadow: 0 0 7px #fff, 0 0 10px rgb(0, 38, 255), 0 0 21px #fff,
       0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 255, 255),
       0 0 92px rgb(255, 255, 255), 0 0 102px rgb(198, 204, 202),
       0 0 151px rgb(32, 34, 33);
@@ -182,12 +182,16 @@ iframe {
   h2 {
     text-align: center;
     color: var(--white);
+    font-size: 2em;
     margin-bottom: 1.5em;
     margin-top: 10px;
     font-weight: 700;
   }
   h2 span {
     color: var(--secondary-color);
+    text-shadow: 0 0 0px #002bff, 0 0 0px #002bff, 0 0 0px #002bff,
+      0 0 0px #002bff, 0 0 0px #002bff, 0 0 5px #002bff, 0 0 102px #002bff,
+      0 0 151px #002bff;
   }
 
   li {
