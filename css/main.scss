@@ -82,6 +82,9 @@ iframe {
     color: var(--secondary-color);
     font-weight: 700;
   }
+  .subhead .hi {
+    color: black;
+  }
 
   .learnButton {
     background: var(--secondary-color);
@@ -94,6 +97,10 @@ iframe {
 
   .learnButton:hover {
     letter-spacing: 6px;
+  }
+
+  svg {
+    display: none;
   }
 }
 

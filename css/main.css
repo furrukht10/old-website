@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 :root {
-  --primary-color: #eeeded;
+  --primary-color: #f1f1f1;
   --darker-shade: rgb(58, 56, 56);
   --secondary-color: #002bff;
   --third-color: #7a7676;
@@ -81,6 +81,10 @@ iframe {
   font-weight: 700;
 }
 
+.left-side .subhead .hi {
+  color: black;
+}
+
 .left-side .learnButton {
   background: var(--secondary-color);
   padding: 10px 20px 10px 20px;
@@ -95,12 +99,16 @@ iframe {
   letter-spacing: 6px;
 }
 
+.left-side svg {
+  display: none;
+}
+
 .about-section {
   background: var(--darker-shade);
 }
 
 .about-section .titleAbout {
-  font-weight: 300;
+  font-weight: 700;
   color: white;
 }
 
