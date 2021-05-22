@@ -1,36 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Title Page</title>
-</head>
-<body>
-    <section class="showcase">
-        <video src="digital.mp4" class="video" muted loop autoplay></video>
-    </section>
-    <div class="banner">
-        <div class="navbar">
-            <h1 class="logo" id = "index">BLOG</h1>
-            <ul>
-                <li><a href="index.html">Home </a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="contact.html">Contact </a></li>
-                <li><a href="Portfolio.html">Portfolio </a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furrukh's Blog Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Furrukh<span>Tanveer</span></a>
+
+        <img
+          id="openMenu"
+          class="mobile-menu"
+          src="./content/Icon open-menu.svg"
+          alt="Open Menu"
+        />
+
+        <nav>
+          <img
+            id="exitMenu"
+            class="exit-menu"
+            src="./content/Icon material-close.svg"
+            alt="Close Menu"
+          />
+          <ul class="navigation">
+            <li class="home"><a href="#homePage">Home</a></li>
+            <li class="home"><a href="#about">About</a></li>
+            <li class="home"><a href="#portfolio">Portfolio</a></li>
+            <li class="home"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Home Page Content -->
+
+    <section id="homePage" class="hero">
+      <div class="container">
+        <div class="left-side">
+          <h1 class="subhead">
+            Hi. I'm <br />
+            <span>Furrukh Tanveer.</span>
+          </h1>
+          <a href="#about" class="learnButton">Learn More</a>
         </div>
-    </div>
-    <div class="content">
-        <h1>FURRUKH TANVEER</h1>
-        <hr class = "thin">
-        <p>COMPUTER SCIENCE STUDENT</p>
-        <a href="about.html" class="button" >LEARN MORE</a>
+        <div class="right-side">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
 
-    </div>   
-    </div>
+    <!-- About Page Content -->
 
-    
-</body>
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="left-side">
+          <h1 class="titleAbout">About <span>Myself</span></h1>
+          <p class="paraAbout">
+            Hi! My name is Furrukh Tanveer. I am a first year student attending
+            Ryerson University pursuing a Bachelors of Science in Computer
+            Science. The field of Computer Science has always interested me as a
+            child. I was always curious in learning about why a particular
+            device functions the way it does, and what has to be done in order
+            for that device to perform such way. Programming allows me to use my
+            creativity and passion for technology to create new programs and
+            expand my knowledge.
+            <br />
+            <br />
+            Besides technology, I am an individual that has a high passion for
+            sports. As a varsity athlete myself, I enjoy watching, analyzing,
+            and playing sports such as Soccer and BasketBall. Along with that,
+            cycling and exploring nature is something I thoroughly enjoy. During
+            my free time, I like to either create personal projects such as
+            websites, study more to further enhance my understanding of a
+            particular subject, or like many others, enjoy my leisure time with
+            some PC gaming!
+          </p>
+          <a
+            href="content/PersonalResume.pdf"
+            class="aboutButton"
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+        <div class="right-side">
+          <img src="#" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Page Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <h2>My <span>Portfolio</span></h2>
+        <ul>
+          <li>
+            <img src="./content/icecreamshop.png" alt="" />
+            <blockquote>
+              Desktop responsive business website designed as a concept using
+              HTML5, CSS, and some JavaScript
+            </blockquote>
+            <a
+              class="webLink"
+              href="https://furrukht10.github.io/icecreamshop"
+              target="_blank"
+              >Link</a
+            >
+          </li>
+
+          <li>
+            <img src="./content/website2.png" alt="" />
+            <blockquote>
+              Desktop responsive blog website created with HTML5 and CSS,
+              contains a PHP backend that is no longer used
+            </blockquote>
+            <a class="webLink" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Page Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact <span>Me</span></h2>
+
+          <form
+            action="https://formsubmit.co/furrukhbusiness@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="11"
+              placeholder="Enter Message"
+              required
+            ></textarea>
+            <button class="send-message" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <!-- Address Information If Needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      const mobileButton = document.getElementById("openMenu");
+      nav = document.querySelector("nav");
+      mobileButtonExit = document.getElementById("exitMenu");
+
+      mobileButton.addEventListener("click", () => {
+        nav.classList.add("menuButton");
+      });
+
+      mobileButtonExit.addEventListener("click", () => {
+        nav.classList.remove("menuButton");
+      });
+    </script>
+  </body>
 </html>
