@@ -84,8 +84,8 @@ iframe {
 
 .left-side .subhead .hi:before {
   content: "Hi.";
-  -webkit-animation: animate infinite 10s;
-          animation: animate infinite 10s;
+  -webkit-animation: animate infinite 15s;
+          animation: animate infinite 15s;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
