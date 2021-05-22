@@ -69,7 +69,7 @@ iframe {
 
 .hero {
   text-align: center;
-  background: var(--primary-color);
+  background: linear-gradient(45deg, white 0%, rgba(0, 43, 255, 0.810428));
 }
 
 .left-side .subhead {
@@ -80,6 +80,10 @@ iframe {
 .left-side .subhead .nameIntro {
   color: var(--secondary-color);
   font-weight: 700;
+}
+
+.left-side .subhead .hi {
+  color: white;
 }
 
 .left-side .subhead .hi:before {
@@ -170,7 +174,7 @@ iframe {
 }
 
 .about-section .paraAbout {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   color: white;
 }
 
