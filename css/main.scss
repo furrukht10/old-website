@@ -223,12 +223,8 @@ iframe {
       border-radius: 20px;
       color: var(--white);
       font-weight: 700;
-      transition: ease-out 0.5s;
+      text-transform: uppercase;
       cursor: pointer;
-    }
-
-    .webLink:hover {
-      letter-spacing: 3px;
     }
   }
 }
