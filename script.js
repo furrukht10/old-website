@@ -13,3 +13,14 @@ mobileButtonExit.addEventListener("click", () => {
 });
 
 // Overlay + Portfolio
+
+// const btnShowPortfolio = document.querySelector(".show-portfolio");
+
+// for (let i = 0; i < btnShowPortfolio.length; i++) {
+//   btnShowPortfolio[i].addEventListener("click", function () {
+//     document.querySelector(".portfolio-card").classList.toggle("hidden");
+//     console.log(
+//       document.querySelector(".portfolio-card").classList.contains("hidden")
+//     );
+//   });
+// }
