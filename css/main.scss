@@ -208,30 +208,31 @@ iframe {
   }
 
   li {
-    background: var(--white);
+    margin: 0 auto 3em auto;
+    width: 300px;
+    height: 230px;
     text-align: center;
-    padding: 2em 1em;
-    margin: 0 auto 5em auto;
-    width: 80%;
-    border-radius: 20px;
-    border: 10px solid #002bff;
-    img {
-      width: 5em;
-      height: 3em;
-      border: 5px solid var(--secondary-color);
-      margin-top: -1em;
-    }
-
-    .webLink {
-      background: var(--secondary-color);
-      padding: 10px 20px 10px 20px;
-      border-radius: 20px;
-      color: var(--white);
-      font-weight: 700;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
+    border-radius: 9px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
   }
+
+  button {
+    margin-left: -10px;
+    width: 300px;
+    height: 230px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  img {
+    border-radius: 9px;
+    margin-left: 0;
+  }
+
+  // SHOW EACH PORTFOLIO SECTION
 }
 
 // Contact Section
@@ -404,4 +405,8 @@ nav {
     text-align: left;
     margin-left: 3%;
   }
+}
+
+.hidden {
+  display: none;
 }

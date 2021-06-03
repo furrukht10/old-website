@@ -108,26 +108,34 @@
     <!-- Portfolio Page Section -->
     <section id="portfolio" class="portfolio-section">
       <div class="container">
-        <h2>My <span>Portfolio</span></h2>
+        <h2>My <span>Portfolio</span> (work in progress...)</h2>
         <ul>
           <li>
-            <img src="./content/icecreamshop.png" alt="" />
-            <blockquote>
-              Desktop responsive business website designed as a concept using
-              HTML5, CSS, and some JavaScript. Being revamped...
-            </blockquote>
-            <a class="webLink" href="#" target="_blank">Link</a>
+            <button>
+              <img src="/content/guessinggame.png" alt="" width="300px" />
+            </button>
           </li>
-
           <li>
-            <img src="./content/website2.png" alt="" />
-            <blockquote>
-              Desktop responsive blog website created with HTML5 and CSS,
-              contains a PHP backend that is no longer used. Being revamped...
-            </blockquote>
-            <a class="webLink" href="#" target="_blank">Link</a>
+            <button>
+              <img src="#" alt="" width="300px" />
+            </button>
           </li>
         </ul>
+
+        <div class="show-portfolio hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Simple Guessing Game</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="#">Link</a>
+        </div>
       </div>
     </section>
 
@@ -163,18 +171,6 @@
     </section>
 
     <!-- JavaScript -->
-    <script>
-      const mobileButton = document.getElementById("openMenu");
-      nav = document.querySelector("nav");
-      mobileButtonExit = document.getElementById("exitMenu");
-
-      mobileButton.addEventListener("click", () => {
-        nav.classList.add("menuButton");
-      });
-
-      mobileButtonExit.addEventListener("click", () => {
-        nav.classList.remove("menuButton");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
