@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 // Color Variables
-:root {
-  --primary-color: #f1f1f1;
-  --darker-shade: rgb(58, 56, 56);
-  --secondary-color: #002bff;
-  --third-color: #7a7676;
-  --white: #fff;
-  --dark-color: #000;
-}
+
+$--primary-color: #f1f1f1;
+$--darker-shade: rgb(58, 56, 56);
+$--secondary-color: #002bff;
+$--third-color: #7a7676;
+$--white: #fff;
+$--dark-color: #000;
 
 // Body
 body {
-  background: var(--primary-color);
+  background: $--primary-color;
   margin: 0;
   font-family: "Poppins";
 }
@@ -23,7 +22,7 @@ section {
 }
 
 a {
-  color: var(--dark-color);
+  color: $--dark-color;
   text-decoration: none;
   cursor: pointer;
 }
@@ -41,21 +40,14 @@ iframe {
 // Navigation Styling
 
 .navbar {
-  background: var(--white);
+  background: $--white;
   padding: 1em 0.5em 3px;
 
   .logo {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2em;
-    color: var(--secondary-color);
-    opacity: 0;
+    margin-bottom: 10px;
   }
   nav {
     display: none;
-  }
-  .logo span {
-    color: var(--dark-color);
   }
 
   .container {
@@ -65,9 +57,10 @@ iframe {
 
   .mobile-menu {
     cursor: pointer;
+    margin-bottom: 10px;
   }
   .home {
-    color: var(--secondary-color);
+    color: $--secondary-color;
     font-weight: 700;
   }
 }
@@ -88,12 +81,12 @@ iframe {
     font-size: 2.5em;
   }
   .subhead .nameIntro {
-    color: var(--secondary-color);
+    color: $--secondary-color;
     font-weight: 700;
   }
 
   .subhead .hi {
-    color: white;
+    color: $--white;
   }
   .subhead .hi:before {
     content: "Hi.";
@@ -130,18 +123,18 @@ iframe {
   }
 
   .learnButton {
-    background: var(--secondary-color);
+    background: $--secondary-color;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    color: var(--white);
+    color: $--white;
     font-weight: 700;
     transition: ease-out 0.5s;
   }
 
   .learnButton:hover {
     letter-spacing: 6px;
-    background: var(--white);
-    color: var(--secondary-color);
+    background: $--white;
+    color: $--secondary-color;
   }
 
   svg {
@@ -152,34 +145,36 @@ iframe {
 // About Section
 
 .about-section {
-  background: var(--darker-shade);
+  background: $--darker-shade;
   .titleAbout {
     font-weight: 700;
-    color: white;
+    color: $--white;
   }
 
   .titleAbout span {
-    color: var(--secondary-color);
+    color: $--secondary-color;
   }
 
   .paraAbout {
     margin-bottom: 5%;
-    color: white;
+    color: $--white;
   }
 
   .aboutButton {
-    background: var(--secondary-color);
+    background: transparent;
+    border: 3px solid $--white;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    color: var(--white);
+    color: $--white;
     font-weight: 700;
     transition: ease-out 0.5s;
   }
 
   .aboutButton:hover {
+    border: 3px solid $--secondary-color;
     letter-spacing: 3px;
-    background: var(--white);
-    color: var(--secondary-color);
+    background: $--secondary-color;
+    color: $--white;
   }
 }
 
@@ -194,14 +189,14 @@ iframe {
 
   h2 {
     text-align: center;
-    color: var(--white);
+    color: $--white;
     font-size: 2em;
     margin-bottom: 1.5em;
     margin-top: 10px;
     font-weight: 700;
   }
   h2 span {
-    color: var(--secondary-color);
+    color: $--secondary-color;
     text-shadow: 0 0 0px #002bff, 0 0 0px #002bff, 0 0 0px #002bff,
       0 0 0px #002bff, 0 0 0px #002bff, 0 0 5px #002bff, 0 0 102px #002bff,
       0 0 151px #002bff;
@@ -212,16 +207,24 @@ iframe {
     margin: 0 auto 3em auto;
     width: 300px;
     height: 500px;
-    background-color: WHITE;
+    //background-color: $--white;
+    background-color: rgba(255, 255, 255, 0.692);
     text-align: center;
     border-radius: 9px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     padding-left: 20px;
     padding-right: 20px;
+    border: 0.5px solid $--secondary-color;
     padding-top: 5px;
 
+    &:hover {
+      transition: ease 0.5s;
+      transform: translateY(-10px);
+    }
+
     h1 {
+      color: $--secondary-color;
       font-weight: 700;
       font-size: 1.3em;
       padding-top: 20px;
@@ -243,13 +246,13 @@ iframe {
 
       a {
         margin-top: 15px;
-        background: blue;
+        background: $--secondary-color;
         padding: 10px 15px 10px 15px;
         color: white;
         border-radius: 9px;
         &:hover {
-          color: blue;
-          background: white;
+          color: $--secondary-color;
+          background: $--white;
         }
       }
     }
@@ -260,15 +263,15 @@ iframe {
 
 // Contact Section
 .contact-section {
-  background: var(--darker-shade);
+  background: $--darker-shade;
 
   h2 {
     font-size: 2em;
-    color: var(--white);
+    color: $--white;
   }
 
   h2 span {
-    color: var(--secondary-color);
+    color: $--secondary-color;
   }
 
   form {
@@ -292,8 +295,8 @@ iframe {
     display: inline-block;
     padding: 10px 25px 10px 25px;
     border-radius: 20px;
-    background: var(--secondary-color);
-    color: white;
+    background: $--secondary-color;
+    color: $--white;
     font-weight: 700;
     transition: ease-out 0.5s;
     cursor: pointer;
@@ -301,21 +304,21 @@ iframe {
 
   .send-message:hover {
     letter-spacing: 3px;
-    background: var(--white);
-    color: var(--secondary-color);
+    background: $--white;
+    color: $--secondary-color;
   }
   a {
-    background: var(--white);
+    background: $--white;
     display: inline-block;
     margin-top: 50px;
     padding: 5px 15px 5px 15px;
     border-radius: 15px;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: $--secondary-color;
   }
   a:hover {
-    background: #002bff;
-    color: var(--white);
+    background: $--secondary-color;
+    color: $--white;
   }
 }
 
@@ -332,9 +335,8 @@ nav.menuButton {
 }
 
 nav {
-  background: var(--secondary-color);
+  background: $--secondary-color;
   opacity: 0.7;
-
   z-index: 1000;
   width: 66%;
   height: 100vh;
@@ -349,7 +351,7 @@ nav {
 
   li {
     a {
-      color: var(--white);
+      color: $--white;
       text-decoration: none;
       text-align: center;
       font-size: 2em;
@@ -359,7 +361,7 @@ nav {
 
     a:hover {
       font-weight: bold;
-      text-decoration: underline;
+      //text-decoration: underline;
     }
   }
 }
@@ -399,6 +401,21 @@ nav {
     ul {
       margin: 0;
     }
+
+    li a {
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: $--secondary-color;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -427,6 +444,10 @@ nav {
   .about-section .container {
     text-align: left;
     margin-left: 3%;
+  }
+
+  .logo {
+    margin-left: 0;
   }
 }
 
