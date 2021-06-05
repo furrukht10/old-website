@@ -153,6 +153,16 @@ iframe {
   display: none;
 }
 
+.left-side .nameIntro {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.left-side .nameIntro:hover {
+  color: #fff;
+  text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 10px #ffffff;
+}
+
 .about-section {
   background: #3a3838;
 }
@@ -184,7 +194,6 @@ iframe {
 
 .about-section .aboutButton:hover {
   border: 3px solid #002bff;
-  letter-spacing: 3px;
   background: #002bff;
   color: #fff;
 }
