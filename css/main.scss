@@ -211,6 +211,9 @@ iframe {
   }
 
   // CARDS
+  ul {
+    list-style: none;
+  }
   li {
     margin: 0 auto 3em auto;
     width: 300px;
@@ -225,6 +228,7 @@ iframe {
     padding-right: 20px;
     border: 0.5px solid $--secondary-color;
     padding-top: 5px;
+    list-style-type: none;
 
     &:hover {
       transition: ease 0.5s;
