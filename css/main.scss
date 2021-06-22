@@ -270,6 +270,9 @@ iframe {
     }
   }
 
+  .portfolio-box ul {
+    display: block;
+  }
   // SHOW EACH PORTFOLIO SECTION
 }
 
@@ -429,6 +432,9 @@ nav {
       }
     }
   }
+  .portfolio-box ul {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -460,6 +466,11 @@ nav {
 
   .logo {
     margin-left: 0;
+  }
+
+  .portfolio-box ul {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

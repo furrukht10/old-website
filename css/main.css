@@ -282,6 +282,10 @@ iframe {
   background: #fff;
 }
 
+.portfolio-section .portfolio-box ul {
+  display: block;
+}
+
 .contact-section {
   background: #3a3838;
 }
@@ -438,6 +442,11 @@ nav li a:hover {
   .navbar nav li a:hover::after {
     width: 100%;
   }
+  .portfolio-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -463,6 +472,14 @@ nav li a:hover {
   }
   .logo {
     margin-left: 0;
+  }
+  .portfolio-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
