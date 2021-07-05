@@ -211,10 +211,8 @@ iframe {
   }
 
   // CARDS
-  ul {
-    list-style: none;
-  }
-  li {
+
+  .projectBox {
     margin: 0 auto 3em auto;
     width: 300px;
     height: 500px;
@@ -246,16 +244,11 @@ iframe {
       font-weight: 300;
       text-align: left;
     }
-    img {
-      margin-bottom: 30px;
-    }
+
     .links {
+      //
       display: flex;
       justify-content: space-around;
-
-      img {
-        margin-bottom: 20px;
-      }
 
       a {
         margin-top: 30px;
@@ -271,9 +264,6 @@ iframe {
     }
   }
 
-  .portfolio-box ul {
-    display: block;
-  }
   // SHOW EACH PORTFOLIO SECTION
 }
 
@@ -466,7 +456,7 @@ nav {
     margin-left: 0;
   }
 
-  .portfolio-box ul {
+  .portfolio-box {
     display: flex;
     justify-content: space-between;
   }

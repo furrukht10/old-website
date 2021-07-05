@@ -216,11 +216,7 @@ iframe {
   text-shadow: 0 0 0px #002bff, 0 0 0px #002bff, 0 0 0px #002bff, 0 0 0px #002bff, 0 0 0px #002bff, 0 0 5px #002bff, 0 0 102px #002bff, 0 0 151px #002bff;
 }
 
-.portfolio-section ul {
-  list-style: none;
-}
-
-.portfolio-section li {
+.portfolio-section .projectBox {
   margin: 0 auto 3em auto;
   width: 300px;
   height: 500px;
@@ -237,30 +233,26 @@ iframe {
   list-style-type: none;
 }
 
-.portfolio-section li:hover {
+.portfolio-section .projectBox:hover {
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-.portfolio-section li h1 {
+.portfolio-section .projectBox h1 {
   color: #002bff;
   font-weight: 700;
   font-size: 1.3em;
   padding-top: 20px;
 }
 
-.portfolio-section li p {
+.portfolio-section .projectBox p {
   font-weight: 300;
   text-align: left;
 }
 
-.portfolio-section li img {
-  margin-bottom: 30px;
-}
-
-.portfolio-section li .links {
+.portfolio-section .projectBox .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,11 +260,7 @@ iframe {
       justify-content: space-around;
 }
 
-.portfolio-section li .links img {
-  margin-bottom: 20px;
-}
-
-.portfolio-section li .links a {
+.portfolio-section .projectBox .links a {
   margin-top: 30px;
   background: #002bff;
   padding: 10px 15px 10px 15px;
@@ -280,13 +268,9 @@ iframe {
   border-radius: 9px;
 }
 
-.portfolio-section li .links a:hover {
+.portfolio-section .projectBox .links a:hover {
   color: #002bff;
   background: #fff;
-}
-
-.portfolio-section .portfolio-box ul {
-  display: block;
 }
 
 .contact-section {
@@ -471,7 +455,7 @@ nav li a:hover {
   .logo {
     margin-left: 0;
   }
-  .portfolio-box ul {
+  .portfolio-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
