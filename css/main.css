@@ -256,6 +256,10 @@ iframe {
   text-align: left;
 }
 
+.portfolio-section li img {
+  margin-bottom: 30px;
+}
+
 .portfolio-section li .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,13 +268,12 @@ iframe {
       justify-content: space-around;
 }
 
-.portfolio-section li .links h4 {
-  font-weight: 300;
-  margin-bottom: 10px;
+.portfolio-section li .links img {
+  margin-bottom: 20px;
 }
 
 .portfolio-section li .links a {
-  margin-top: 15px;
+  margin-top: 30px;
   background: #002bff;
   padding: 10px 15px 10px 15px;
   color: white;
@@ -441,11 +444,6 @@ nav li a:hover {
   }
   .navbar nav li a:hover::after {
     width: 100%;
-  }
-  .portfolio-box ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
