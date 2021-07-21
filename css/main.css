@@ -133,20 +133,13 @@ iframe {
   }
 }
 
-.left-side .learnButton {
-  background: #002bff;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  color: #fff;
-  font-weight: 700;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+.left-side .l a {
+  margin-right: 20px;
 }
 
-.left-side .learnButton:hover {
-  letter-spacing: 6px;
-  background: #fff;
-  color: #002bff;
+.left-side .l a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .left-side svg {
