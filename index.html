@@ -4,185 +4,171 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Furrukh's Blog Page</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <div class="navbar">
-      <div class="container">
-        <a class="logo" href="#"><img src="content/Logo2.png"  height = "25px" alt=""></a>
+    <header class="header" id="myHeader">
+      <nav class="main--nav">
+        <ul class="main-nav-list">
+          <li><a href="#about">about</a></li>
+          <li><a id="specialText" href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <img
-          id="openMenu"
-          class="mobile-menu"
-          src="./content/Icon open-menu.svg"
-          alt="Open Menu"
-        />
-
-        <nav>
-          <img
-            id="exitMenu"
-            class="exit-menu"
-            src="./content/Icon material-close.svg"
-            alt="Close Menu"
-          />
-          <ul class="navigation">
-            <li class="home"><a href="#homePage">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Home Page Content -->
-
-    <section id="homePage" class="hero">
-      <div class="container">
-        <div class="left-side">
-          <h1 class="subhead">
-            <span id="intro" class="hi"> I'm <br />
-            <span class="nameIntro">Furrukh Tanveer.</span>
-          </h1>
-          <div class="l">
-            <a href="#contact"><img src="/content/gmail.svg" alt="" width = "25"></a>
-            <a href="https://github.com/furrukht10"><img src="/content/github.svg" alt="" width = "25"></a>
-            <a href="https://www.linkedin.com/in/furrukhtanveer/"><img src="/content/linkedin.svg" alt="" width = "25"></a>
-          </div>
-          
-          <svg
-            class="shape"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="#002bff"
-              fill-opacity="1"
-              d="M0,32L288,224L576,320L864,288L1152,0L1440,64L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
-            ></path>
-          </svg>
-          <div class="box"></div>
+    <section id="hero" class="section--hero">
+      <div class="hero">
+        <div class="hero--text">
+          <h1 class="name">Furrukh Tanveer</h1>
+          <p class="description">Computer Science Student</p>
         </div>
-        <div class="right-side">
-          <!-- <img src="content/Shape1.png" width = "500px" alt="" /> -->
-        </div>
+        <a class="hero--cta" href="#aboutTitle">Learn More</a>
       </div>
     </section>
 
-    <!-- About Page Content -->
-
-    <section id="about" class="about-section">
-      <div class="container">
-        <div class="left-side">
-          <h1 class="titleAbout">About <span>Myself</span></h1>
-          <p class="paraAbout">
+    <section id="about" class="section--about">
+      <h1 id="aboutTitle" class="title">About <span>Myself</span></h1>
+      <div class="about">
+        <div class="about-text">
+          <p>
             Hi! My name is Furrukh Tanveer. I am a first year student attending
             Ryerson University pursuing a Bachelors of Science in Computer
-            Science. The field of Computer Science has always interested me as a
-            child. I was always curious in learning about why a particular
-            device functions the way it does, and what has to be done in order
-            for that device to perform such way. Programming allows me to use my
-            creativity and passion for technology to create new programs and
-            expand my knowledge.
-            <br />
-            <br />
-            Besides technology, I am an individual that has a high passion for
-            sports. As a varsity athlete myself, I enjoy watching, analyzing,
-            and playing sports such as Soccer and BasketBall. Along with that,
-            cycling and exploring nature is something I thoroughly enjoy. During
-            my free time, I like to either create personal projects such as
-            websites, study more to further enhance my understanding of a
-            particular subject, or like many others, enjoy my leisure time with
-            some PC gaming!
+            Science. The field of Computer Science is something I have always
+            been interested and passionate about. Learning about about why a
+            particular device functions the way it does, or how a software is
+            designed and executed, continously fuels my interest and curiosity
+            in terms of technology. Programming allows me to use my creativity
+            and passion for technology to create new programs and expand my
+            knowledge.
           </p>
-
           <a
             href="content/PersonalResume.pdf"
-            class="aboutButton"
-            target="_blank"
-            >Download Resume</a
+            onclick="window.open('/content/PersonalResume.pdf')"
+            class="about--cta"
+            >Download Resume &srarr;</a
           >
         </div>
-        <div class="right-side">
-          <img src="#" alt="" />
+        <div class="about-img">
+          <div class="img-row">
+            <img src="/content/java.svg" alt="" />
+            <img src="/content/javascript.svg" alt="" />
+            <img src="/content/python.svg" alt="" />
+          </div>
+          <div class="img-row">
+            <img src="/content/html.svg" alt="" />
+            <img src="/content/css.svg" alt="" />
+            <img src="/content/sass.svg" alt="" />
+          </div>
+          <div class="img-row">
+            <img src="/content/xd.svg" alt="" />
+            <img src="/content/photoshop.svg" alt="" />
+            <img src="/content/Icon awesome-github.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Page Section -->
-    <section id="portfolio" class="portfolio-section">
-      <div class="container">
-        <h2>My <span>Portfolio</span></h2>
-        <div class="portfolio-box">
-          <div class="projectBox">
-            <h1>Banking App</h1>
-            <p>
-               Inspired by a tutorial, this simple application designed using HTML, CSS, JS allows you deposit and request money between a series of pre-existing accounts.
-               Please check out the GitHub README before using the Demo.
-            </p>
-            <img src="content/banking.png" width="200px" alt="" />
-            <div class="links">
-                 <a href="https://github.com/furrukht10/Banking-App"
-                    target="_blank">Github</a>
-                    <a href="https://demo-banking-app.netlify.app/" target="_blank">Demo</a>
-
-            </div>
-          </div>
-          <div class="projectBox">
-            <h1>Game Collection (JavaScript)</h1>
-            <p>
-            A collection of games designed using JavaScript, HTML, and CSS.
-            </p>
-            <img src="content/guessinggame.png" width="300px" height = "230px" alt="" />
-            <div class="links">
-                 <a href="https://github.com/furrukht10/Game-Collection"
-                    target="_blank">Github</a>
-                    <a href="https://game-collection-v1.netlify.app/"" target="_blank">Demo</a>
-            </div>
-          </div>
-          <div class="projectBox">
-            <h1>Flight Reservation System</h1>
-            <p>
-             A school project which required making a flight reservation system using Java and core Object Oriented Programming principles such as (classes, objects, inheritence, maps). The system allows you to book and cancel flights and specific seats on a plane using a passenger name and passport number.
-            </p>
-            <img src="content/FLIGHTRES.png" width="200px" alt="" />
-          </div>
-        </div>
-        <div class="portfolio-box">
-            <div class="projectBox">
-              <h1>Game Collection (Python)</h1>
-              <p>
-              A collection of games designed using Python (Turtle, PyGame, etc...)
+    <section id="projects" class="section--projects">
+      <div class="projects">
+        <h1 class="title" style="color: blue">Projects</h1>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-content">
+              <div class="carousel-header"><h1>Banking App</h1></div>
+              <p class="carousel-caption">
+                This application designed using HTML, CSS, and JavaScript allows
+                you deposit and request money between a series of pre-existing
+                accounts. The application uses JavaScript concepts such as DOM
+                manipulation, objects, functions, and primarily arrays and array
+                methods. Please check out the GitHub readme before using the
+                demo.
               </p>
-              <img src="content/spaceinvaders.png" width="300px" height = "250px" alt="" />
-              <div class="links">
-                   <a href="
-                      https://github.com/furrukht10/Game-Collection-Python"
-                      target="_blank">Github</a>     
-              </div>
+              <img src="/content/banking.png" width="90px" alt="" />
             </div>
-
-
-
-
-
-
-
-        <div> 
+            <div class="carousel-links">
+              <a
+                href="https://github.com/furrukht10/Banking-App"
+                onclick="window.open('https://github.com/furrukht10/Banking-App')"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://demo-banking-app.netlify.app/"
+                target="_blank"
+                onclick="window.open('https://demo-banking-app.netlify.app/')"
+                >Demo</a
+              >
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-content">
+              <div class="carousel-header"><h1>Workout Logger</h1></div>
+              <p class="carousel-caption">
+                This application designed using HTML, CSS and JavaScript allows
+                you to log your workouts on a map. The application uses the
+                Geolocation API, localStorage API, and the leaflet library to
+                accurately pinpoint your location on a map and store data. This
+                application was designed primarily using object-oriented
+                programming and concepts such as classes, objects, inheritance,
+                encapsulation, arrays, and functions.
+              </p>
+              <img src="/content/workoutlogger.png" width="90px" alt="" />
+            </div>
+            <div class="carousel-links">
+              <a
+                href="https://github.com/furrukht10/Workout-Logger"
+                onclick="window.open('https://github.com/furrukht10/Workout-Logger')"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://workoutlogger.netlify.app/"
+                target="_blank"
+                onclick="window.open('https://workoutlogger.netlify.app/')"
+                >Demo</a
+              >
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-content">
+              <div class="carousel-header">
+                <h1>Python Games</h1>
+              </div>
+              <p class="carousel-caption">
+                A collection of simple 2D and 3D games being designed using
+                Python. This project is constantly being worked on. The games
+                are designed using Python and libraries and modules such as
+                PyGame, turtle, etc...
+              </p>
+              <img
+                src="/content/gamecollectionpython.png"
+                width="90px"
+                alt=""
+              />
+            </div>
+            <div class="carousel-links">
+              <a
+                href="https://github.com/furrukht10/Game-Collection-Python"
+                onclick="window.open('https://github.com/furrukht10/Game-Collection-Python')"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Page Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="contact-left">
-          <h2>Contact <span>Me</span></h2>
-
+    <section id="contact" class="section--contact">
+      <div class="contact">
+        <h1 class="title">Contact <span>Me</span></h1>
+        <div class="contact-container">
           <form
             action="https://formsubmit.co/furrukhbusiness@gmail.com"
             method="POST"
+            class="form"
           >
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
@@ -196,16 +182,10 @@
             ></textarea>
             <button class="send-message" type="submit">Send Message</button>
           </form>
-          <a id="scrollButton" href="#homePage">Scroll Up</a>
-        </div>
-
-        <div class="contact-right">
-          <!-- Address Information If Needed -->
         </div>
       </div>
     </section>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
