@@ -75,7 +75,7 @@ html {
 
 .name {
   font-size: 9.6rem;
-  font-family: "The Historia Demo", sans-serif;
+  font-family: "The Historia Demo", "Poppins";
   color: blue;
   font-weight: 700;
   margin-bottom: 3.2rem;
@@ -85,7 +85,7 @@ html {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
 }
 
 .hero--cta {
@@ -97,6 +97,12 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: white;
+    color: blue;
+    border: blue;
+  }
 }
 
 /*****************************************/
