@@ -287,6 +287,12 @@ html {
   margin-right: 20px;
 }
 
+.next {
+  position: absolute;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+
 /*****************************************/
 /* CONTACT SECTION */
 /*****************************************/
