@@ -1,0 +1,51 @@
+/*****************************************/
+/* CONTACT SECTION */
+/*****************************************/
+
+.section--contact {
+  margin-top: 3.2rem;
+  background-color: #e3e3e3;
+  border: 2px solid blue;
+}
+
+.contact {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 80%;
+
+  .contact-container {
+    margin: auto;
+    background: rgba($color: blue, $alpha: 0.8);
+    padding: 3.2rem;
+    border-radius: 9px;
+    form {
+      display: block;
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.8em;
+        margin-bottom: 1.5em;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    }
+    .send-message {
+      width: 100%;
+      padding: 10px 25px 10px 25px;
+      border-radius: 20px;
+      border: 0;
+      background: white;
+      color: blue;
+      font-weight: 700;
+
+      transition: ease-in-out 0.5s;
+
+      &:hover {
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+}

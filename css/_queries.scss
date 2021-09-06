@@ -1,0 +1,119 @@
+/*****************************************/
+/** MEDIA QUERIES SECTION */
+/*****************************************/
+@media only screen and (max-width: 450px) {
+  .img-row {
+    margin: 2.2rem auto !important;
+    gap: 1.1rem !important;
+    row-gap: 0;
+    img {
+      margin-bottom: 0;
+      width: 50px;
+    }
+  }
+
+  .projects {
+    padding: 0 !important;
+  }
+
+  .carousel-container {
+    margin-top: 1rem 0 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+    height: 80rem !important;
+
+    img {
+      width: 150px !important;
+    }
+
+    .carousel-header {
+      font-size: 1.5rem !important;
+      transform: translateY(-30px) scale(1) skewX(-15deg) !important;
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .contact {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption {
+    margin-bottom: 0 !important;
+    text-align: left;
+  }
+
+  .carousel-links a {
+    padding: 2rem !important;
+    font-size: 1rem 3rem !important;
+    margin-right: 10px !important;
+  }
+
+  .carousel-content {
+    img {
+      width: 250px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0rem !important;
+  }
+
+  .carousel-content {
+    display: block !important;
+    text-align: center;
+    img {
+      width: 300px !important;
+    }
+  }
+
+  .carousel-links {
+    margin: auto;
+    text-align: center;
+  }
+
+  .about-img {
+    margin: 20px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-links {
+    a {
+      padding: 1rem 2rem !important;
+      font-size: 1rem;
+    }
+  }
+
+  .carousel-caption {
+    font-size: 1rem !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    display: block;
+  }
+  // Cards
+  .carousel-header {
+    font-size: 2rem !important;
+  }
+  .carousel-caption {
+    font-size: 1.7rem !important;
+  }
+}
+
+// Laptop
+@media only screen and (max-width: 1920px) {
+}
+
+// Desktop
+@media only screen and (min-width: 1920px) {
+  .section--hero {
+    padding: 30rem 0 !important;
+  }
+}

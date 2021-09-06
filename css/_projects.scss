@@ -1,0 +1,101 @@
+/*****************************************/
+/* PROJECTS */
+/*****************************************/
+
+.section--projects {
+  margin-top: 3.2rem;
+  background-color: #e3e3e3;
+  border: 2px solid blue;
+}
+
+.projects {
+  margin: 0 auto;
+  width: 100%;
+}
+
+// CAROUSEL //
+
+.carousel-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+  height: 60rem;
+  /* IN THE END */
+  overflow: hidden;
+  .carousel {
+    background: white;
+    border-radius: 8px;
+    padding: 4rem;
+    margin-top: 4.8rem;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    .carousel-content {
+      display: flex;
+    }
+    .carousel-header {
+      position: absolute;
+      background: blue;
+      padding: 1rem;
+      transform: translateY(-30px) scale(1) skewX(-15deg);
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+    .carousel-caption {
+      font-size: 2rem;
+      line-height: 1.7;
+      padding: 10px;
+      flex-basis: 50%;
+      margin: 2rem 0;
+    }
+    img {
+      align-self: center;
+      margin: 20px auto;
+      width: 50%;
+      height: 25%;
+      padding: 10px;
+    }
+
+    .carousel-links {
+      margin-bottom: 20px;
+      a {
+        padding: 1.8rem 4.8rem;
+        background-color: blue;
+        color: white;
+        font-size: 2.2rem;
+        border-radius: 9px;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  // top: 50%;
+  z-index: 100;
+  border: none;
+  background: blue;
+  font-family: inherit;
+  color: white;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+  transform: translateY(-600%);
+}
+
+.slider__btn--left {
+  left: 6%;
+}
+
+.slider__btn--right {
+  right: 6%;
+}

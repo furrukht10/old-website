@@ -1,0 +1,47 @@
+/*****************************************/
+/* HERO */
+/*****************************************/
+.section--hero {
+  background-color: #e3e3e3;
+  background-size: cover;
+  padding: 12.4rem 0;
+  border: 2px solid blue;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.name {
+  font-size: 9.6rem;
+  font-family: "The Historia Demo", "Poppins";
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.description {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 6.4rem;
+}
+
+.hero--cta {
+  padding: 1.2rem 3.6rem;
+  background-color: blue;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: white;
+    color: blue;
+    border: blue;
+  }
+}

@@ -1,0 +1,62 @@
+/*****************************************/
+/* ABOUT */
+/*****************************************/
+
+.section--about {
+  margin-top: 3.2rem;
+  background-color: #e3e3e3;
+  border: 2px solid blue;
+}
+
+.title {
+  text-align: center;
+  padding: 3.2rem;
+  font-size: 3.2rem;
+  span {
+    color: blue;
+  }
+}
+
+.about {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
+  display: flex;
+  .about-text {
+    flex-basis: 50%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    p {
+      margin-bottom: 2.2rem;
+    }
+    .about--cta {
+      color: blue;
+      transition: ease-out 0.5s;
+      &:hover {
+        letter-spacing: 6px;
+      }
+    }
+  }
+  .about-img {
+    flex-basis: 50%;
+    align-items: center;
+    .img-row {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9.6rem;
+      row-gap: 4.8rem;
+      img {
+        margin-bottom: 4.8rem;
+        width: 75px;
+        transition: transform 0.6s ease-in-out;
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

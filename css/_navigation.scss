@@ -1,0 +1,28 @@
+/*****************************************/
+/* NAVIGATION */
+/*****************************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  li a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  #specialText {
+    color: blue;
+    font-weight: 700;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
