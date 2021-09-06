@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +90,7 @@ html {
 
 .name {
   font-size: 9.6rem;
-  font-family: "The Historia Demo", "Poppins";
+  font-family: "Courgette", cursive;
   color: blue;
   font-weight: 700;
   margin-bottom: 3.2rem;

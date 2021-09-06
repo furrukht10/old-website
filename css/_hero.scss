@@ -1,6 +1,9 @@
 /*****************************************/
 /* HERO */
 /*****************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 .section--hero {
   background-color: #e3e3e3;
   background-size: cover;
@@ -16,7 +19,7 @@
 
 .name {
   font-size: 9.6rem;
-  font-family: "The Historia Demo", "Poppins";
+  font-family: "Courgette", cursive;
   color: blue;
   font-weight: 700;
   margin-bottom: 3.2rem;
