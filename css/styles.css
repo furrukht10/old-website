@@ -219,22 +219,27 @@ html {
 }
 
 .projects {
-  max-width: 130rem;
   margin: 0 auto;
-  padding: 3.2rem;
   width: 100%;
 }
 
 .carousel-container {
-  padding: 4.8rem;
-  margin: auto;
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+  height: 60rem;
+  /* IN THE END */
+  overflow: hidden;
 }
 
 .carousel-container .carousel {
   background: white;
   border-radius: 8px;
-  padding: 2.2rem;
+  padding: 4rem;
   margin-top: 4.8rem;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
 }
 
 .carousel-container .carousel .carousel-content {
@@ -245,11 +250,16 @@ html {
 
 .carousel-container .carousel .carousel-header {
   position: absolute;
+  background: blue;
+  padding: 1rem;
+  -webkit-transform: translateY(-30px) scale(1) skewX(-15deg);
+          transform: translateY(-30px) scale(1) skewX(-15deg);
+}
+
+.carousel-container .carousel .carousel-header h1 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: blue;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  color: white;
   text-transform: uppercase;
 }
 
@@ -259,7 +269,7 @@ html {
   padding: 10px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .carousel-container .carousel img {
@@ -287,10 +297,28 @@ html {
   margin-right: 20px;
 }
 
-.next {
+.slider__btn {
   position: absolute;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  z-index: 100;
+  border: none;
+  background: blue;
+  font-family: inherit;
+  color: white;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+  -webkit-transform: translateY(-600%);
+          transform: translateY(-600%);
+}
+
+.slider__btn--left {
+  left: 6%;
+}
+
+.slider__btn--right {
+  right: 6%;
 }
 
 /*****************************************/
@@ -368,14 +396,16 @@ html {
     margin-top: 1rem 0 !important;
     padding: 1rem !important;
     text-align: center !important;
+    height: 80rem !important;
   }
   .carousel-container img {
     width: 150px !important;
   }
   .carousel-container .carousel-header {
     font-size: 1.5rem !important;
-    -webkit-transform: translateY(-30px) !important;
-            transform: translateY(-30px) !important;
+    -webkit-transform: translateY(-30px) scale(1) skewX(-15deg) !important;
+            transform: translateY(-30px) scale(1) skewX(-15deg) !important;
+    margin-bottom: 30px !important;
   }
   .contact {
     padding: 0 !important;
