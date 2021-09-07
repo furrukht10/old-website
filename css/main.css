@@ -334,6 +334,7 @@ html {
   cursor: pointer;
   -webkit-transform: translateY(-600%);
           transform: translateY(-600%);
+  opacity: 0.5;
 }
 
 .slider__btn--left {
