@@ -19,7 +19,9 @@
 .name {
   font-size: 9.6rem;
   font-family: "Bilbo Swash Caps", cursive;
-  color: blue;
+  // color: blue;
+  color: white;
+  text-shadow: 0 0 7px blue, 0 0 10px blue, 0 0 21px blue;
   font-weight: 700;
   margin-bottom: 3.2rem;
 }
