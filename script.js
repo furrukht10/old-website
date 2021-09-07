@@ -91,3 +91,11 @@ const slider = function () {
   });
 };
 slider();
+
+//LOADING SCREEN
+const loader = document.getElementById("loader");
+const body = document.querySelector("body");
+
+setTimeout(() => {
+  body.removeChild(loader);
+}, 7000);

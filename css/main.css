@@ -501,4 +501,86 @@ html {
     padding: 30rem 0 !important;
   }
 }
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #e1e1e1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loader-content img {
+  -webkit-animation: spin 5s linear;
+          animation: spin 5s linear;
+}
+
+@-webkit-keyframes spin {
+  30% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  30% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loader-back {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  color: blue;
+  height: 0.2rem;
+  padding: 2px 0;
+}
+
+.loader-front {
+  position: relative;
+  width: 10%;
+  height: 0.1rem;
+  margin: auto;
+  background-color: blue;
+  -webkit-animation: extend 7s linear;
+          animation: extend 7s linear;
+}
+
+@-webkit-keyframes extend {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes extend {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
