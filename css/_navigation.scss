@@ -1,10 +1,37 @@
 /*****************************************/
 /* NAVIGATION */
 /*****************************************/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*vertical align*/
+
+  background: $--primary-gradient-background;
+  padding: 0 4.8rem;
+  border-bottom: none;
+  z-index: 100;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  outline: none;
+
+  /* For Sticky */
+  height: 9.6rem;
+}
+
+.main--nav {
+  background-color: none;
+  width: 100%;
+  padding: 3rem;
+  z-index: 1000;
+}
+
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3.2rem;
   li a {
     font-size: 1.8rem;

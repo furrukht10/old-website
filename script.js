@@ -11,9 +11,11 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     header.style.opacity = 0.7;
+    header.style.background = "white";
   } else {
     header.classList.remove("sticky");
     header.style.opacity = 1;
+    header.style.background = "none";
   }
 }
 

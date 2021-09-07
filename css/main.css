@@ -18,6 +18,19 @@ html {
   font-size: 62.5%;
 }
 
+.title {
+  padding: 3.2rem;
+  font-size: 5rem;
+  text-align: center;
+  background-color: blue;
+  -webkit-transform: scale(0.5) skew(-15deg);
+          transform: scale(0.5) skew(-15deg);
+  color: white;
+}
+
+/*****************************************/
+/* NAVIGATION */
+/*****************************************/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,18 +42,25 @@ html {
       -ms-flex-align: center;
           align-items: center;
   /*vertical align*/
-  background-color: white;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #a7bfe8), color-stop(70%, #a7bfe8), color-stop(70%, #8b9fec), color-stop(80%, #8b9fec), color-stop(80%, #5460f4), color-stop(90%, #5460f4), color-stop(90%, #2600ff), to(#2600ff));
+  background: linear-gradient(90deg, white 60%, #a7bfe8 60%, #a7bfe8 70%, #8b9fec 70%, #8b9fec 80%, #5460f4 80%, #5460f4 90%, #2600ff 90%, #2600ff 100%);
   padding: 0 4.8rem;
-  border: 2px solid #0000ff;
   border-bottom: none;
   z-index: 100;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  outline: none;
   /* For Sticky */
   height: 9.6rem;
 }
 
-/*****************************************/
-/* NAVIGATION */
-/*****************************************/
+.main--nav {
+  background-color: none;
+  width: 100%;
+  padding: 3rem;
+  z-index: 1000;
+}
+
 .main-nav-list {
   list-style: none;
   display: -webkit-box;
@@ -49,6 +69,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 3.2rem;
 }
 
@@ -78,10 +101,11 @@ html {
 /* HERO */
 /*****************************************/
 .section--hero {
-  background-color: white;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, white), color-stop(60%, #a7bfe8), color-stop(70%, #a7bfe8), color-stop(70%, #8b9fec), color-stop(80%, #8b9fec), color-stop(80%, #5460f4), color-stop(90%, #5460f4), color-stop(90%, #2600ff), to(#2600ff));
+  background: linear-gradient(90deg, white 60%, #a7bfe8 60%, #a7bfe8 70%, #8b9fec 70%, #8b9fec 80%, #5460f4 80%, #5460f4 90%, #2600ff 90%, #2600ff 100%);
   padding: 12.4rem 0;
-  border: 2px solid blue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .hero {
@@ -107,21 +131,25 @@ html {
 
 .hero--cta {
   padding: 1.2rem 3.6rem;
-  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0000ffff), color-stop(51%, #a7bfe8), to(#0000ffff));
+  background-image: linear-gradient(to right, #0000ffff 0%, #a7bfe8 51%, #0000ffff 100%);
+  background-size: 200% auto;
+  border-radius: 10px;
   color: white;
   font-size: 1.8rem;
-  border-radius: 9px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hero--cta:hover {
-  background-color: white;
-  color: blue;
-  border: blue;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*****************************************/
@@ -130,17 +158,7 @@ html {
 .section--about {
   margin-top: 3.2rem;
   background-color: white;
-  border: 2px solid blue;
-}
-
-.title {
-  padding: 3.2rem;
-  font-size: 3.2rem;
-  text-align: center;
-}
-
-.title span {
-  color: blue;
+  border-radius: 20px;
 }
 
 .about {
@@ -218,7 +236,7 @@ html {
 .section--projects {
   margin-top: 3.2rem;
   background-color: white;
-  border: 2px solid blue;
+  border-radius: 20px;
 }
 
 .projects {
@@ -243,6 +261,8 @@ html {
   position: absolute;
   top: 0;
   overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .carousel-container .carousel .carousel-content {
@@ -330,7 +350,7 @@ html {
 .section--contact {
   margin-top: 3.2rem;
   background-color: white;
-  border: 2px solid blue;
+  border-radius: 20px;
 }
 
 .contact {
