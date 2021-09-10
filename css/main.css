@@ -523,8 +523,10 @@ html {
 }
 
 .loader-content img {
-  -webkit-animation: spin 5s linear;
-          animation: spin 5s linear;
+  -webkit-animation: spin 3.5s linear;
+          animation: spin 3.5s linear;
+  -webkit-filter: drop-shadow(5px 5px 7px blue);
+  filter: drop-shadow(5px 5px 7px blue);
 }
 
 @-webkit-keyframes spin {

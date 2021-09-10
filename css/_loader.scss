@@ -21,7 +21,9 @@
 }
 
 .loader-content img {
-  animation: spin 5s linear;
+  animation: spin 3.5s linear;
+  -webkit-filter: drop-shadow(5px 5px 7px blue);
+  filter: drop-shadow(5px 5px 7px blue);
 }
 
 @keyframes spin {
@@ -44,8 +46,9 @@
   height: 0.1rem;
   margin: auto;
   background-color: blue;
-  animation: extend 5s linear;
-  transition: all 1.5s;
+
+  animation: extend 5s linear; //Loader Width Increases (5 seconds) (JS removes after 5s)
+  transition: all 1.5s; //Fade Out Animation
 }
 
 @keyframes extend {
