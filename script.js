@@ -98,4 +98,4 @@ const body = document.querySelector("body");
 
 setTimeout(() => {
   body.removeChild(loader);
-}, 7000);
+}, 5000);

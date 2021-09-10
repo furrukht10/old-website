@@ -505,7 +505,7 @@ html {
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  background-color: #e1e1e1;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -555,8 +555,10 @@ html {
   height: 0.1rem;
   margin: auto;
   background-color: blue;
-  -webkit-animation: extend 7s linear;
-          animation: extend 7s linear;
+  -webkit-animation: extend 5s linear;
+          animation: extend 5s linear;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 
 @-webkit-keyframes extend {
@@ -568,6 +570,7 @@ html {
   }
   100% {
     width: 100%;
+    opacity: 0;
   }
 }
 
@@ -580,6 +583,7 @@ html {
   }
   100% {
     width: 100%;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
