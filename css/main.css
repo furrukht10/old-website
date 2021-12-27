@@ -153,6 +153,11 @@ html {
   text-decoration: none;
 }
 
+#inhero {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
 /*****************************************/
 /* ABOUT */
 /*****************************************/
@@ -400,6 +405,18 @@ html {
 .contact .contact-container .send-message:hover {
   background-color: blue;
   color: white;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials img {
+  width: 25px;
+}
+
+.socials a {
+  margin: 0 10px;
 }
 
 /*****************************************/
